@@ -2,11 +2,12 @@ import os, sys, time
 menuac="menu"
 def auto():
 	global menuac
-	print("In process...[ok]")
+	print("In Process .... 	            [ OK ]")
 	time.sleep(1.0)
-	print("Starting Script...[ok]")
+	print("Starting Script ....         [ OK ]")
 	time.sleep(1.0)
 	os.system("java -jar encoder.jar -l resources/es.properties -i  script.txt -o inject.bin")
+	time.sleep(1.0)
 	os.system("clear")
 	menuac="menu"
 def manu():
@@ -17,25 +18,29 @@ def manu():
 	print(menu2)
 	ak = input("Auto@auto$~> ")
 	ak2.split("-")
-	print("In process...[ok]")
+	print("In Process .... 	            [ OK ]")
 	time.sleep(1.0)
-	print("Starting Script...[ok]")
+	print("Starting Script ....         [ OK ]")
 	time.sleep(1.0)
 	os.system("java -jar encoder.jar -l resources/"ak2[0]".properties -i  "ak2[1]" -o inject.bin")
+	time.sleep(1.0)
 	os.system("clear")
 	menuac="menu"
 def ayuda():
 	global menuac
 	ayuda1="""
-	___________________________________
+	_______________________________________
 
 	How dose it work?
 		-> This program makes it
 			unnecessary to remember the
 			compilation command of the
 			'DuckyScript'.
-	___________________________________
-	
+	_______________________________________
+
+	-> By default the script is assigned
+		the 'DuckyScript' called script.txt.
+	________________________________________	
 	"""
 	print(ayuda1)
 	print("[1] to go back")
@@ -48,8 +53,8 @@ def menu():
 	menu1="""
 	[+] Opciones.
 	[1] Convert Script Autoatic.
-    [2]	Convert Script Manual.
-    [3]	Help.
+        [2] Convert Script Manual.
+        [3] Help.
 	[4] Exit.
 	"""
 	print(menu1)
