@@ -22,7 +22,7 @@ def manu():
 	time.sleep(1.0)
 	print("Starting Script ....         [ OK ]")
 	time.sleep(1.0)
-	os.system("java -jar encoder.jar -l resources/"ak2[0]".properties -i  "ak2[1]" -o inject.bin")
+	os.system("java -jar encoder.jar -l resources/"+ak2[0]+".properties -i  "+ak2[1]+" -o inject.bin")
 	time.sleep(1.0)
 	os.system("clear")
 	menuac="menu"
@@ -69,16 +69,15 @@ def menu():
 		sys.exit()
 
 def movimiento():
-	try:
-		while True:
-			if menuac == "menu":
-				menu()
-			elif menuac == "auto":
-				auto()
-			elif menuac == "manu":
-				manu()
-			elif menuac == "ayuda":
-				ayuda()
-	except KeyboardInterrupt:
+    try:
+        while True:
+            if menuac == "menu":
+                menu()
+            elif menuac == "auto":
+                auto()
+            elif menuac == "manu":
+                manu()
+    except KeyboardInterrupt:
+        sys.exit()
 if __name__=="__main__":
-	movimiento()
+    movimiento()
