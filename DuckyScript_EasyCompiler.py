@@ -17,7 +17,7 @@ def manu():
 	"""
 	print(menu2)
 	ak = input("Auto@auto$~> ")
-	ak2.split("-")
+	ak2=ak.split("-")
 	print("In Process .... 	            [ OK ]")
 	time.sleep(1.0)
 	print("Starting Script ....         [ OK ]")
