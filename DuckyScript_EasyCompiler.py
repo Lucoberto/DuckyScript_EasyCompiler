@@ -2,7 +2,7 @@ import os, sys, time
 menuac="menu"
 def auto():
 	global menuac
-	print("In Process .... 	            [ OK ]")
+	print("In Process ....              [ OK ]")
 	time.sleep(1.0)
 	print("Starting Script ....         [ OK ]")
 	time.sleep(1.0)
@@ -18,7 +18,7 @@ def manu():
 	print(menu2)
 	ak = input("Auto@auto$~> ")
 	ak2=ak.split("-")
-	print("In Process .... 	            [ OK ]")
+	print("In Process ....              [ OK ]")
 	time.sleep(1.0)
 	print("Starting Script ....         [ OK ]")
 	time.sleep(1.0)
@@ -27,20 +27,27 @@ def manu():
 	os.system("clear")
 	menuac="menu"
 def ayuda():
+	os.system("clear")
 	global menuac
 	ayuda1="""
-	_______________________________________
+    __  __     __      ______
+   / / / /__  / /___  / / / /
+  / /_/ / _ \/ / __ \/ / / / 
+ / __  /  __/ / /_/ /_/_/_/  
+/_/ /_/\___/_/ .___(_|_|_)   
+            /_/
+________________________________________________
 
 	How dose it work?
 		-> This program makes it
 			unnecessary to remember the
 			compilation command of the
 			'DuckyScript'.
-	_______________________________________
+_________________________________________________
 
 	-> By default the script is assigned
 		the 'DuckyScript' called script.txt.
-	________________________________________	
+_________________________________________________	
 	"""
 	print(ayuda1)
 	print("[1] to go back")
@@ -51,11 +58,18 @@ def ayuda():
 def menu():
 	global menuac
 	menu1="""
-	[+] Opciones.
-	[1] Convert Script Autoatic.
-        [2] Convert Script Manual.
-        [3] Help.
-	[4] Exit.
+	____             __         ______                      _ __         
+   / __ \__  _______/ /____  __/ ____/___  ____ ___  ____  (_) /__  _____
+  / / / / / / / ___/ //_/ / / / /   / __ \/ __ `__ \/ __ \/ / / _ \/ ___/
+ / /_/ / /_/ / /__/ ,< / /_/ / /___/ /_/ / / / / / / /_/ / / /  __/ /    
+/_____/\__,_/\___/_/|_|\__, /\____/\____/_/ /_/ /_/ .___/_/_/\___/_/     
+                      /____/                     /_/ 
+_______________[<!>]V1.1.3 -> Debeloped by @Lucoberto[<!>]_______________
+	                        [+] Options.
+	                        [1] Convert Script Autoatic.
+                                [2] Convert Script Manual.
+                                [3] Help.
+	                        [4] Exit.
 	"""
 	print(menu1)
 	op = input("Auto@auto$~> ")
