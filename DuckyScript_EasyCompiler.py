@@ -16,7 +16,7 @@ def manu():
 	[+] Put the type of Keyboard and the name of the fail wiht the extenxion.
 	"""
 	print(menu2)
-	ak = input("Auto@auto$~> ")
+	ak = input("Ducky@ducky$~> ")
 	ak2=ak.split("-")
 	print("In Process ....              [ OK ]")
 	time.sleep(1.0)
@@ -38,33 +38,34 @@ def ayuda():
             /_/
 ________________________________________________
 
-	How dose it work?
-		-> This program makes it
-			unnecessary to remember the
-			compilation command of the
-			'DuckyScript'.
+How dose it work?
+	-> This program makes it
+		unnecessary to remember the
+		compilation command of the
+		'DuckyScript'.
 _________________________________________________
 
-	-> By default the script is assigned
-		the 'DuckyScript' called script.txt.
+-> By default the script is assigned
+	the 'DuckyScript' called script.txt.
 _________________________________________________	
 	"""
 	print(ayuda1)
 	print("[1] to go back")
-	op=input("Auto@auto$~> ")
+	op=input("Ducky@ducky$~> ")
 	if op == "1":
 		menuac="menu"
 
 def menu():
+	os.system("clear")
 	global menuac
 	menu1="""
-	____             __         ______                      _ __         
+    ____             __         ______                      _ __         
    / __ \__  _______/ /____  __/ ____/___  ____ ___  ____  (_) /__  _____
   / / / / / / / ___/ //_/ / / / /   / __ \/ __ `__ \/ __ \/ / / _ \/ ___/
  / /_/ / /_/ / /__/ ,< / /_/ / /___/ /_/ / / / / / / /_/ / / /  __/ /    
 /_____/\__,_/\___/_/|_|\__, /\____/\____/_/ /_/ /_/ .___/_/_/\___/_/     
                       /____/                     /_/ 
-_______________[<!>]V1.1.3 -> Debeloped by @Lucoberto[<!>]_______________
+_______________[<!>]V1.1.5 -> Debeloped by @Lucoberto[<!>]_______________
 	                        [+] Options.
 	                        [1] Convert Script Autoatic.
                                 [2] Convert Script Manual.
@@ -72,7 +73,7 @@ _______________[<!>]V1.1.3 -> Debeloped by @Lucoberto[<!>]_______________
 	                        [4] Exit.
 	"""
 	print(menu1)
-	op = input("Auto@auto$~> ")
+	op = input("Ducky@ducky$~> ")
 	if op == "1":
 		menuac="auto"
 	elif op == "2":
@@ -91,6 +92,8 @@ def movimiento():
                 auto()
             elif menuac == "manu":
                 manu()
+            elif menuac == "ayuda":
+                ayuda()
     except KeyboardInterrupt:
         sys.exit()
 if __name__=="__main__":
