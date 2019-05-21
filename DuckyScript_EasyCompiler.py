@@ -12,7 +12,7 @@ def auto():
 def manu():
 	global menuac
 	menu2="""
-	[+] Coloque el tipo de teclado y el nombre del archivo y extenxion.
+	[+] Put the type of Keyboard and the name of the fail wiht the extenxion.
 	"""
 	print(menu2)
 	ak = input("Auto@auto$~> ")
@@ -33,10 +33,10 @@ def menu():
 	global menuac
 	menu1="""
 	[+] Opciones.
-	[1] Convertir Script Autoatico.
-	[2]	Convertir Script Manual.
-	[3]	Ayuda.
-	[4] Salir.
+	[1] Convert Script Autoatic.
+        [2] Convert Script Manual.
+        [3] Help.
+	[4] Exit.
 	"""
 	print(menu1)
 	op = input("Auto@auto$~> ")
