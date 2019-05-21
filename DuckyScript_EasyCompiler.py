@@ -26,16 +26,30 @@ def manu():
 	menuac="menu"
 def ayuda():
 	global menuac
-	ayuda1=""""""
+	ayuda1="""
+	___________________________________
+
+	How dose it work?
+		-> This program makes it
+			unnecessary to remember the
+			compilation command of the
+			'DuckyScript'.
+	___________________________________
+	
+	"""
 	print(ayuda1)
+	print("[1] to go back")
+	op=input("Auto@auto$~> ")
+	if op == "1":
+		menuac="menu"
 
 def menu():
 	global menuac
 	menu1="""
 	[+] Opciones.
 	[1] Convert Script Autoatic.
-        [2] Convert Script Manual.
-        [3] Help.
+    [2]	Convert Script Manual.
+    [3]	Help.
 	[4] Exit.
 	"""
 	print(menu1)
