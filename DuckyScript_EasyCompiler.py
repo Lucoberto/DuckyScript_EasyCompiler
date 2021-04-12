@@ -1,4 +1,4 @@
-import os, sys, time
+import os, sys
 menuac="menu"
 def auto():
 	global menuac
